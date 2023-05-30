@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles-clothing.css" />
+    <link rel="stylesheet" href="head-and-foot.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+    <title>Marketplace | ITFactory Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="overlay"></div>
+      <nav>
+        <div class="left-nav">
+          <img
+            src="./images/logo-vintageclothes.png"
+            alt="vintage clothes logo"
+            class="logo"
+          />
+          <div class="icons">
+            <a href="login.html">
+              <i class="fa fa-user"></i>
+            </a>
+            <a href="cart.html" class="cart">
+              <ion-icon name="basket"></ion-icon> Cart<span>0</span>
+            </a>
+            <a href="#search" class="search">
+            </a><input type="text" placeholder="Search..." class="search" />
+              <i class="fa fa-search"></i>
+          </div>
+        </div>
+
+        <div class="right-nav">
+          <ul class="navigation">
+            <li><a href="index.html">Acasă</a></li>
+            <li>
+              <a href="clothing.html" class="haine">Haine</a>
+              <span class="subnav">
+                <a href="dress.html">Rochii</a>
+                <a href="shoes.html">Pantofi</a>
+                <a href="accesorii.html">Accesorii</a>
+              </span>
+            </li>
+            <li><a href="cont.html">Cont</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="contain top">
+      <div id="buttons">
+        <button class="btn" onclick="filterObjects('all')">Toate marimile: </button>
+        <button class="btn" onclick="filterObjects('5cm')">5cm</button>
+        <button class="btn" onclick="filterObjects('10cm')">10cm</button>
+        <button class="btn" onclick="filterObjects('15cm')">15cm</button>
+        <button class="btn" onclick="filterObjects('20cm')">20cm</button>
+        <button class="btn" onclick="filterObjects('25cm')">25cm</button>
+      </div>
+    <br>
+    </div> 
+    <div class="contain objects">
+      <div class="image 5cm 10cm 15cm">
+        <img src="./images/imgAccesorii1.jpeg"  alt="accesorii"/>
+        <h5>Funda roz cu brosa</h5>
+        <h5>40 RON</h5>
+        <a class="add-cart cart1" href="#">Add Cart</a>
+        <input type="hidden" value="40" />
+      </div>
+      <div class="image 5cm 10cm 15cm 20cm 25cm">
+        <img src="./images/imgAccesorii2.jpeg"  alt="accesorii"/>
+        <h5>Funda neagra</h5>
+        <h5>50 RON</h5>
+        <a class="add-cart cart2" href="#">Add Cart</a>
+        <input type="hidden" value="50" />
+      </div>
+      <div class="image 5cm 15cm 20cm 25cm">
+        <img src="./images/imgAccesorii3.jpeg"  alt="accesorii"/>
+        <h5>Funda alb cu negru</h5>
+        <h5>45 RON</h5>
+        <a class="add-cart cart3" href="#">Add Cart</a>
+        <input type="hidden" value="45" />
+      </div>
+      <div class="image 15cm 15cm 20cm 25cm">
+        <img src="./images/imgAccesorii4.jpeg"  alt="accesorii"/>
+        <h5>Accesoriu gat</h5>
+        <h5>65 RON</h5>
+        <a class="add-cart cart4" href="#">Add Cart</a>
+        <input type="hidden" value="65" />
+      </div>
+      <div class="image 5cm 10cm 15cm 20cm">
+        <img src="./images/imgAccesorii5.jpeg"  alt="accesorii"/>
+        <h5>Funda rosie</h5>
+        <h5>60 RON</h5>
+        <a class="add-cart cart5" href="#">Add Cart</a>
+        <input type="hidden" value="60" />
+      </div>
+      <div class="image 15cm 20cm 25cm">
+        <img src="./images/imgAccesorii6.jpeg"  alt="accesorii"/>
+        <h5>Set cercei si colier</h5>
+        <h5>150 RON</h5>
+        <a class="add-cart cart6" href="#">Add Cart</a>
+        <input type="hidden" value="150" />
+      </div>
+        <div class="image 15cm 20cm 25cm">
+          <img src="./images/imgAccesorii7.jpeg"  alt="accesorii"/>
+          <h5>Colier cristal roz</h5>
+          <h5>90 RON</h5>
+          <a class="add-cart cart7" href="#">Add Cart</a>
+          <input type="hidden" value="90" />
+        </div>
+        <div class="image 15cm 20cm 25cm">
+          <img src="./images/imgAccesorii8.jpeg"  alt="accesorii"/>
+          <h5>Colier cu pandativ rosu</h5>
+          <h5>100 RON</h5>
+          <a class="add-cart cart8" href="#">Add Cart</a>
+          <input type="hidden" value="100" />
+        </div>
+        <div class="image 5cm">
+          <img src="./images/imgAccesorii9.jpeg"  alt="accesorii"/>
+          <h5>Inel piatra rosie</h5>
+          <h5>90 RON</h5>
+          <a class="add-cart cart9" href="#">Add Cart</a>
+          <input type="hidden" value="90" />
+        </div>
+        <div class="image 5cm">
+          <img src="./images/imgAccesorii10.jpeg"  alt="accesorii"/>
+          <h5>Cercei aurii cu perla</h5>
+          <h5>70 RON</h5>
+          <a class="add-cart cart10" href="#">Add Cart</a>
+          <input type="hidden" value="70" />
+        </div>
+        <div class="image 5cm">
+          <img src="./images/imgAccesorii11.jpeg"  alt="accesorii"/>
+          <h5>Cercei aurii queen</h5>
+          <h5>70 RON</h5>
+          <a class="add-cart cart11" href="#">Add Cart</a>
+          <input type="hidden" value="70" />
+        </div>
+          <div class="image 5cm">
+            <img src="./images/imgAccesorii12.jpeg"  alt="accesorii"/>
+            <h5>Inel aurit</h5>
+            <h5>90 RON</h5>
+            <a class="add-cart cart12" href="#">Add Cart</a>
+            <input type="hidden" value="90" />
+          </div>
+          <div class="image 5cm 10cm">
+            <img src="./images/imgAccesorii13.jpeg"  alt="accesorii"/>
+            <h5>Brosa queen</h5>
+            <h5>100 RON</h5>
+            <a class="add-cart cart13" href="#">Add Cart</a>
+            <input type="hidden" value="100" />
+          </div>
+          <div class="image 20cm 25cm">
+            <img src="./images/imgAccesorii14.jpeg"  alt="accesorii"/>
+            <h5>Colier dark</h5>
+            <h5>67 RON</h5>
+            <a class="add-cart cart14" href="#">Add Cart</a>
+            <input type="hidden" value="67" />
+          </div>
+          <div class="image 15cm">
+            <img src="./images/imgAccesorii15.jpeg"  alt="accesorii"/>
+            <h5>Funda rosie</h5>
+            <h5>40 RON</h5>
+            <a class="add-cart cart15" href="#">Add Cart</a>
+            <input type="hidden" value="40" />
+          </div>
+          <div class="image 5cm">
+            <img src="./images/imgAccesorii16.jpeg"  alt="accesorii"/>
+            <h5>Brosa queen</h5>
+            <h5>56 RON</h5>
+            <a class="add-cart cart16" href="#">Add Cart</a>
+            <input type="hidden" value="56" />
+          </div>
+        </div>
+
+      </div>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="addToCart.js"></script>
+    <script src="filter.js"></script>
+  </body>
+</html>
+  
+

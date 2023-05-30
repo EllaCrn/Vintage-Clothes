@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles-clothing.css" />
+    <link rel="stylesheet" href="head-and-foot.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+    <title>Marketplace | ITFactory Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="overlay"></div>
+      <nav>
+        <div class="left-nav">
+          <img
+            src="./images/logo-vintageclothes.png"
+            alt="vintage clothes logo"
+            class="logo"
+          />
+          <div class="icons">
+            <a href="login.html">
+              <i class="fa fa-user"></i>
+            </a>
+            <a href="cart">
+              <i class="fa fa-shopping-cart cart" name="basket"></i>Cart<span> 0</span>
+            </a>
+            <a href="#search" class="search">
+              <input type="text" placeholder="Search..." class="search" action="" onsubmit="return false" />
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="right-nav">
+          <ul class="navigation">
+            <li><a href="index.html">Acasă</a></li>
+            <li>
+              <a href="clothing.html">Haine</a>
+              <span class="subnav">
+                <a href="dress.html">Rochii</a>
+                <a href="shoes.html">Pantofi</a>
+                <a href="accesorii.html">Accesorii</a>
+              </span>
+            </li>
+            <li><a href="cont.html">Cont</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+<div class="contain top">
+  <div id="buttons">
+    <button class="btn" onclick="filterObjects('all')">Toate marimile:</button>
+    <button class="btn" onclick="filterObjects('36')">36</button>
+    <button class="btn" onclick="filterObjects('37')">37</button>
+    <button class="btn" onclick="filterObjects('38')">38</button>
+    <button class="btn" onclick="filterObjects('39')">39</button>
+    <button class="btn" onclick="filterObjects('40')">40</button>
+  </div>
+<br>
+</div>
+<div class="contain objects">
+  <div class="image 38 40">
+    <img src="./images/imgShoes1.jpeg" alt="fashion shoes" />
+    <h5>Pantofi maro</h5>
+    <h5>100 RON</h5>
+    <a class="add-cart cart1" href="#">Add Cart</a>
+    <input type="hidden" value="100" />
+  </div>
+  <div class="image 36 38 40">
+    <img src="./images/imgShoes2.jpeg" alt="fashion shoes" />
+    <h5>Pantofi negri</h5>
+    <h5>100 RON</h5>
+    <a class="add-cart cart2" href="#">Add Cart</a>
+    <input type="hidden" value="100" />
+  </div>
+  <div class="image 37 40">
+    <img src="./images/imgShoes3.jpeg" alt="fashion shoes" />
+    <h5>Pantofi cu fundita</h5>
+    <h5>110 RON</h5>
+    <a class="add-cart cart3" href="#">Add Cart</a>
+    <input type="hidden" value="110" />
+  </div>
+  <div class="image 36 38">
+    <img src="./images/imgShoes4.jpeg" alt="fashion shoes" />
+    <h5>Sandale negre</h5>
+    <h5>80 RON</h5>
+    <a class="add-cart cart4" href="#">Add Cart</a>
+    <input type="hidden" value="80" />
+  </div>
+  <div class="image 36 39 40">
+    <img src="./images/imgShoes5.jpeg" alt="fashion shoes" />
+    <h5>Sandale verzi</h5>
+    <h5>80 RON</h5>
+    <a class="add-cart cart5" href="#">Add Cart</a>
+    <input type="hidden" value="80" />
+  </div>
+  <div class="image 36 39 40">
+    <img src="./images/imgShoes6.jpeg" alt="fashion shoes" />
+    <h5>Pantofi decupati</h5>
+    <h5>120 RON</h5>
+    <a class="add-cart cart6" href="#">Add Cart</a>
+    <input type="hidden" value="120" />
+  </div>
+  <div class="image 36 40">
+    <img src="./images/imgShoes7.jpeg" alt="fashion shoes" />
+    <h5>Pantofi</h5>
+    <h5>90 RON</h5>
+    <a class="add-cart cart7" href="#">Add Cart</a>
+    <input type="hidden" value="90" />
+  </div>
+  <div class="image 40">
+    <img src="./images/imgShoes8.jpeg" alt="fashion shoes" />
+    <h5>Pantofi bleo</h5>
+    <h5>80 RON</h5>
+    <a class="add-cart cart8" href="#">Add Cart</a>
+    <input type="hidden" value="80" />
+  </div>
+  <div class="image 37 38 40">
+    <img src="./images/imgShoes9.jpeg" alt="fashion shoes" />
+    <h5>Pantofi diamond</h5>
+    <h5>190 RON</h5>
+    <a class="add-cart cart9" href="#">Add Cart</a>
+    <input type="hidden" value="190" />
+  </div>
+  <div class="image 37 39">
+    <img src="./images/imgShoes10.jpeg" alt="fashion shoes" />
+    <h5>Pantofi diamond albi</h5>
+    <h5>140 RON</h5>
+    <a class="add-cart cart10" href="#">Add Cart</a>
+    <input type="hidden" value="140" />
+  </div>
+  <div class="image 39">
+    <img src="./images/imgShoes11.jpeg" alt="fashion shoes" />
+    <h5>Pantofi queen</h5>
+    <h5>150 RON</h5>
+    <a class="add-cart cart11" href="#">Add Cart</a>
+    <input type="hidden" value="150" />
+  </div>
+  <div class="image 37">
+    <img src="./images/imgShoes12.jpeg" alt="fashion shoes" />
+    <h5>Pantofi perlati</h5>
+    <h5>130 RON</h5>
+    <a class="add-cart cart12" href="#">Add Cart</a>
+    <input type="hidden" value="130" />
+  </div>
+  <div class="image 38 39">
+    <img src="./images/imgShoes13.jpeg" alt="fashion shoes" />
+    <h5>Sandale cu funda</h5>
+    <h5>100 RON</h5>
+    <a class="add-cart cart13" href="#">Add Cart</a>
+    <input type="hidden" value="100" />
+  </div>
+  <div class="image 37 39 40">
+    <img src="./images/imgShoes14.jpeg" alt="fashion shoes" />
+    <h5>Pantofi pearls</h5>
+    <h5>90 RON</h5>
+    <a class="add-cart cart14" href="#">Add Cart</a>
+    <input type="hidden" value="90" />
+  </div>
+  <div class="image 37 40">
+    <img src="./images/imgShoes15.jpeg" alt="fashion shoes" />
+    <h5>Pantofi cu margele</h5>
+    <h5>130 RON</h5>
+    <a class="add-cart cart15" href="#">Add Cart</a>
+    <input type="hidden" value="130" />
+  </div>
+  <div class="image 38 39">
+    <img src="./images/imgShoes16.jpeg" alt="fashion shoes" />
+    <h5>Pantofi golden</h5>
+    <h5>120 RON</h5>
+    <a class="add-cart cart16" href="#">Add Cart</a>
+    <input type="hidden" value="120" />
+  </div>
+</div>
+   
+  </div>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="addToCart.js"></script>
+    <script src="filter.js"></script>
+    </body>
+  </html>
